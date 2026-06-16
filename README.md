@@ -1,0 +1,1 @@
+Raw and processed sequencing data will be deposited in GEO and made publicly available upon acceptance. This repository contains analysis scripts and notebooks used to generate the RNA-seq and scRNA-seq figures in the manuscript.
