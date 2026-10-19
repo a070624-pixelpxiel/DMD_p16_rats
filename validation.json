@@ -1,0 +1,111 @@
+{
+  "validation": "All 12 code cells executed sequentially in reanalyze mode using Python 3.12. No Jupyter kernel was used.",
+  "date": "2026-10-09",
+  "executed_code_cells": 12,
+  "error_outputs": 0,
+  "embedded_PNG_figures": 6,
+  "notebook_and_script_code_identical": true,
+  "default_mode": "reanalyze",
+  "input_reference_snapshot_and_command_manifest_files_verified": 13,
+  "comparison_baseline": "Previous animal-level paired analysis of original estimated counts; not unpaired libraries.",
+  "statistical_settings_changed_during_packaging": false,
+  "original_inputs_and_existing_packages_overwritten": false,
+  "reanalysis_summary": {
+    "mode": "reanalyze",
+    "libraries": 17,
+    "animals": 5,
+    "design": "~ animal + condition",
+    "contrast": "positive / negative",
+    "significant_genes": 2,
+    "tested_pathways": 1310,
+    "significant_pathways": 49,
+    "PCA_variance_percent": [
+      40.73302976293934,
+      16.003441553193028
+    ],
+    "DE_stat_max_absolute_difference_from_snapshot": 4.440892098500626e-16,
+    "GSEA_BH_max_absolute_difference_from_snapshot": 1.1102230246251565e-16,
+    "seed": 20260915,
+    "GSEA_sample_size": 1001,
+    "input_method": "scaledTPM formula per library, before animal aggregation",
+    "any_nonconverged_genes": 169,
+    "significant_nonconverged_genes": [],
+    "note": "Frozen scaledTPM snapshot: 2 DEGs, 49 significant pathways. These are reference results, not selection targets."
+  },
+  "plot_update_20261016": {
+    "inference_rerun": false,
+    "selected_pathways": 10,
+    "display_rule": "BH-adjusted P < 0.05 across all 1,310 originally tested gene sets",
+    "removed_terms": [
+      "KEGG:rno05414",
+      "KEGG:rno05410"
+    ],
+    "notebook_plotting_cell_executed": true,
+    "notebook_and_script_code_identical": true
+  },
+  "public_release_20261019": {
+    "purpose": "English-language revision analysis package for GitHub",
+    "notebook": "Fig3_pooled_myofiber_RNAseq_revision.ipynb",
+    "script": "Fig3_pooled_myofiber_RNAseq_revision.py",
+    "personal_review_request_removed": true,
+    "machine_specific_source_paths_removed": true,
+    "statistical_code_changed": false,
+    "only_code_change": "Package-directory error message",
+    "source_code_cell_count": 12,
+    "code_AST_matches_source_except_documented_error_message": true,
+    "all_embedded_outputs_preserved": true,
+    "new_full_statistical_reanalysis_performed": false,
+    "note": "The historical validation and analysis results above describe the source analysis. This release updates documentation, filenames, and portable paths.",
+    "execution_check": {
+      "date": "2026-10-19",
+      "check": "English-language GitHub revision package",
+      "notebook_structure_checked": true,
+      "all_code_cells_parse": true,
+      "notebook_and_script_AST_identical": true,
+      "executed_mode": "replot",
+      "execution_method": "Code cells executed sequentially in Python 3.12; no Jupyter kernel used",
+      "executed_code_cells": 12,
+      "default_release_mode": "reanalyze",
+      "default_release_mode_was_not_modified_for_delivery": true,
+      "new_differential_expression_or_GSEA_inference_run": false,
+      "libraries": 17,
+      "animals": 5,
+      "significant_genes": 2,
+      "tested_gene_sets": 1310,
+      "significant_gene_sets": 49,
+      "selected_gene_sets": 10,
+      "selected_gene_sets_all_BH_adjusted_P_below_005": true,
+      "PCA_variance_percent_matches_source": true,
+      "selected_pathway_values_match_source": true,
+      "PNG_byte_identity_with_saved_source_figures": {
+        "PCA_all_samples.png": true,
+        "Volcano_all_samples.png": false,
+        "GSEA_selected_pathways.png": true
+      },
+      "elapsed_seconds": 38.35,
+      "note": "This check verifies packaging and figure reproduction; it does not establish biological robustness.",
+      "pixel_comparison_with_saved_source_figures": {
+        "PCA_all_samples.png": {
+          "same_dimensions": true,
+          "changed_pixels": 0,
+          "total_pixels": 1365390,
+          "maximum_RGB_channel_difference_on_0_to_255_scale": 0
+        },
+        "Volcano_all_samples.png": {
+          "same_dimensions": true,
+          "changed_pixels": 36,
+          "total_pixels": 2146050,
+          "maximum_RGB_channel_difference_on_0_to_255_scale": 1
+        },
+        "GSEA_selected_pathways.png": {
+          "same_dimensions": true,
+          "changed_pixels": 0,
+          "total_pixels": 3076020,
+          "maximum_RGB_channel_difference_on_0_to_255_scale": 0
+        }
+      }
+    },
+    "original_source_file_hashes_rechecked": true,
+    "all_primary_result_files_unchanged": true
+  }
+}
